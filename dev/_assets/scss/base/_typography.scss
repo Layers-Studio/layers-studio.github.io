@@ -1,16 +1,20 @@
-$heading-font: 'Lato', sans-serif;
-$body-font: 'Lato', sans-serif;
+$heading-font: 'justus pro', serif;
+$body-font: 'justus pro', serif;
 
 $line-height: $ratio#{em};
 $font-weight: 100;
 $base-font-size: 14;
 
 
+$font-weight-light: 200;
+$font-weight-medium: 300;
+$font-weight-bold: 400;
+
 html{
     font-family: $body-font;
     line-height: $line-height;
     font-size: $base-font-size#{px};
-    font-weight: $font-weight;
+    font-weight: $font-weight-light;
     direction: ltr;
     display: block;
     unicode-bidi: embed;

@@ -19,7 +19,6 @@ build:
  - 'copy:dist'
  - 'processhtml'
  - 'htmlmin'
- - 'gh-pages'
 
 recompile:
  - 'jekyll:dev'

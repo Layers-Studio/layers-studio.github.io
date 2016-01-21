@@ -1,9 +1,8 @@
 %hn{
    font-family: $heading-font;
-   font-weight: 300;
+   font-weight: $font-weight-light;
    line-height: 1em;
    margin: 0 0 $ratio--inv#{em};
-   text-transform: uppercase;
    -webkit-font-smoothing: antialiased;
 }
 
