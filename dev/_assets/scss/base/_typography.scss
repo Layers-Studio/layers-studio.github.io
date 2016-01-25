@@ -22,16 +22,17 @@ html{
 }
 
 body{
-    @include breakpoint(small){
-        font-size: 16 / $base-font-size#{em};
-        line-height: $line-height;
-    }
-    @include breakpoint(medium){
-        font-size: 18 / $base-font-size#{em};
-        line-height: $line-height;
-    }
-    @include breakpoint(large){
-        font-size: 22 / $base-font-size#{em};
-        line-height: $line-height;
-    }
+  // font-size: 18 / $base-font-size#{em};
+  //   @include breakpoint(small){
+  //       font-size: 20 / $base-font-size#{em};
+  //       line-height: $line-height;
+  //   }
+  //   @include breakpoint(medium){
+  //       font-size: 25 / $base-font-size#{em};
+  //       line-height: $line-height;
+  //   }
+  //   @include breakpoint(large){
+  //       font-size: 30 / $base-font-size#{em};
+  //       line-height: $line-height;
+  //   }
 }

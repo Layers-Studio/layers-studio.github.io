@@ -1,0 +1,139 @@
+h2 {
+  padding: 4px 0 0 4px;
+}
+.ftr {
+width: 100%;
+height: 1000px;
+  background: #1beab8;
+}
+
+.wrapper {
+  background: #fff;
+}
+
+@keyframes blink {
+    0% { box-shadow: 0px 0 0px rgba(0, 0, 0, 0.4); }
+    50% { box-shadow: 0px 0 8px rgba(0, 0, 0, 0.4); }
+    100% { box-shadow: 0px 0 0px rgba(0, 0, 0, 0.4); }
+}
+
+.blink {
+    animation: blink 1.0s linear;
+}
+
+@keyframes inner-shadow {
+    0% { box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4); }
+    100% { box-shadow: none; }
+}
+
+.swing-fifth, .swing-seventh {
+  margin-top: 3em !important;
+}
+
+.inner-shadow {
+    animation: inner-shadow 1.5s linear;
+}
+
+.panel--wrapper {
+  h2 {
+    font-size: 16px;
+    @media only screen and (min-width: 470px) {
+      font-size: 17px;
+    }
+
+    @media only screen and (min-width: 550px) {
+      font-size: 20px;
+    }
+
+    @media only screen and (min-width: 750px) {
+        font-size: 25px;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        font-size: 30px;
+    }
+  }
+}
+
+
+
+  .panel {
+    float: left;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    position: relative;
+    perspective: 500px;
+    background: #fff;
+    position: relative;
+    @media only screen and (min-width: 400px) and (max-width : 699px) {
+      height: 36px;
+    }
+    @media only screen and (min-width: 751px) and (max-width : 1000px) {
+      height: 40px;
+    }
+  }
+
+.front {
+  position: absolute;
+  top: 0;
+}
+.back {
+  color: #fff;
+  background: #1beab8;
+}
+
+// .swing {
+//   background: #1beab8;
+// }
+
+  /* -- swing like a gate -- */
+  .swing .front,
+  .swing .back {
+    transition-duration: 1s;
+    transform-origin: 200px 0px;
+  }
+  .swing .front {
+     transform: rotateY(0);
+  }
+
+.clicked {
+    @extend .inner-shadow;
+    height: 50px;
+    width: 100%;
+}
+
+  .swing .back {
+    background: #1beab8;
+    position: absolute;
+    top: 50px;
+    height: 50px;
+    @media only screen and (min-width: 400px) and (max-width : 699px) {
+      top: 36px;
+      height: 36px;
+    }
+    @media only screen and (min-width: 751px) and (max-width : 1000px) {
+      top: 40px;
+      height: 40px;
+    }
+    width: 100%;
+    transform: rotateX(180deg) translateX(0) translateZ(0);
+    color: #1beab8;
+    opacity: 1;
+  }
+
+  .swing.flip .back {
+    transform: rotateX(0)  translateX(0) translateZ(2px);
+    opacity: 1;
+    @extend .blink;
+  }
+
+  @media only screen and (min-width: 1152px) and (max-width : 1355px) {
+    .swing-fourth, .swing-fifth {
+      height: 70px;
+      .back {
+        top: 70px;
+        height: 70px;
+      }
+    }
+  }
