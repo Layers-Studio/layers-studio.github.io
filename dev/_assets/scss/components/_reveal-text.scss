@@ -131,6 +131,9 @@ height: 1000px;
   @media only screen and (min-width: 1152px) and (max-width : 1355px) {
     .swing-fourth, .swing-fifth {
       height: 70px;
+      .clicked {
+        height: 70px;
+      }
       .back {
         top: 70px;
         height: 70px;

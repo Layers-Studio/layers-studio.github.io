@@ -15,6 +15,7 @@ body{
     opacity:0;  /* make things invisible upon start */
     animation:fadeIn ease-in 1;
     animation-fill-mode:forwards;
+    font-weight: $font-weight-light;
     animation-duration: 0.5s;
 }
 

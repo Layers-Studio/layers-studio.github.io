@@ -4,6 +4,16 @@
     height: $ratio#{em};
 }
 
+.icon--small{
+    width: 1em;
+    height: 1em;
+}
+
+.icon__large {
+  width: 2 + $ratio#{em};
+  height: 2 + $ratio#{em};
+}
+
 .icon__facebook{
 	fill: $color__facebook;
 }
