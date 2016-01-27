@@ -1,8 +1,12 @@
 .nav {
  font-size: 25px;
  text-align: right;
+ margin-top: 1.5em;
+ padding-right: 1em;
  svg {
    fill: $color__black;
+   position: absolute;
+   top: 0;
  }
  .icon {
    padding-top: 0px;
@@ -21,7 +25,12 @@
 .nav__li {
   padding-left: 0.3em;
   display: inline-block;
+  position: relative;
+  &:not(:last-child):after {
+    content: '/';
+  }
   a {
     padding-right: 0.3em;
+    display: inline-block;
   }
 }

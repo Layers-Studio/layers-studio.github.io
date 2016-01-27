@@ -1,9 +1,9 @@
 .sidebar {
   text-align: right;
+  margin-top: $ratio#{em};
   h4 {
-    line-height: 0;
+    line-height: 1.3em;
     margin: 0;
-
   }
   .icon {
     margin-bottom: $ratio--inv#{em};
@@ -13,4 +13,10 @@
 .sidebar__form {
   margin: $ratio#{em} 0 15 + $ratio#{em} 0;
 
+}
+
+address {
+  h4 {
+    line-height: 1.3em;
+  }
 }

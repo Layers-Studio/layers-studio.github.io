@@ -15,11 +15,10 @@
 
 %input{
     font-size: 1em;
-    display: block;
-    width: 100%;
+    display: inline-block;
     padding: $ratio--inv#{em};
     background-color: $color__white;
-    border: 1px solid $color__gray;
+    border: 2px solid $color__blue;
     color: $color__black;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);

@@ -3,7 +3,7 @@ h2 {
 }
 .ftr {
 width: 100%;
-height: 1000px;
+height: 800px;
   background: #1beab8;
 }
 
@@ -83,14 +83,11 @@ height: 1000px;
   background: #1beab8;
 }
 
-// .swing {
-//   background: #1beab8;
-// }
+.flip .back {
+  transition-duration: 1s;
+}
 
-  /* -- swing like a gate -- */
-  .swing .front,
   .swing .back {
-    transition-duration: 1s;
     transform-origin: 200px 0px;
   }
   .swing .front {

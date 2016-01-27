@@ -4,7 +4,7 @@ default:
 serve:
  - 'clean:server'
  - 'svgstore'
- - 'recompile'
+ - 'regenerate'
  - 'connect'
  - 'watch'
 
@@ -14,17 +14,18 @@ build:
  - 'jekyll:dist'
  - 'sass:dist'
  - 'autoprefixer:dist'
+ - 'browserify:dist'
  - 'requirejs'
  - 'modernizr'
  - 'copy:dist'
  - 'processhtml'
  - 'htmlmin'
- - 'gh-pages'
 
-recompile:
+regenerate:
  - 'jekyll:dev'
  - 'sass:dev'
  - 'autoprefixer:dev'
  - 'copy:scripts'
+ - 'browserify:dev'
  - 'copy:images'
  - 'copy:fonts'

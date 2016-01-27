@@ -5,7 +5,6 @@ module.exports = {
     dev: {
         options: {
             dest: '.tmp/',
-            drafts: true
         }
     },
     dist: {
