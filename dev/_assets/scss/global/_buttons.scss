@@ -1,6 +1,5 @@
 %button {
     background-color: $color__blue;
-    border: pow($ratio--inv, 3)#{em} solid $color__blue;
     color: $color__white !important;
     cursor: pointer;
     display: inline-block;
@@ -10,7 +9,6 @@
     font-weight: bold;
     line-height: 1em;
     margin: $ratio--inv#{em} 0;
-    padding: $ratio--inv#{em} $ratio#{em};
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -25,8 +23,7 @@
     &:hover,
     &:focus,
     &.zeroclipboard-is-hover {
-        background: $color__gray--light;
-        border: pow($ratio--inv, 3)#{em} solid $color__gray--light;
+        background: $color__white url(/imgs/Plus.png) no-repeat center;
         color: $color__white;
         fill: $color__white;
         outline: none;

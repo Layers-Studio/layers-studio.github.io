@@ -18,7 +18,7 @@
     display: inline-block;
     padding: $ratio--inv#{em};
     background-color: $color__white;
-    border: 2px solid $color__blue;
+    border: 1px solid $color__black;
     color: $color__black;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
@@ -123,6 +123,15 @@ input[type="radio"]{
     & ~ span{
         border-radius: 100%;
     }
+}
+
+input[type="submit"]{
+    background: $color__blue url(/imgs/Plus.png) no-repeat center;
+    text-indent: -9999px;
+    border: 1px solid $color__black;
+    border-left: 0;
+    padding: 0.68em 1em;
+    color: $color__gray;
 }
 
 // Optional class to add to form to create optional content
