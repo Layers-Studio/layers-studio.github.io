@@ -11,7 +11,10 @@
 }
 
 .sidebar__form {
-  margin: $ratio#{em} 0 15 + $ratio#{em} 0;
+  margin: $ratio#{em} 0 2 + $ratio#{em} 0;
+  @include breakpoint(medium){
+    margin: $ratio#{em} 0 15 + $ratio#{em} 0;
+  }
 
 }
 

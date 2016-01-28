@@ -1,8 +1,17 @@
 .nav {
- font-size: 25px;
+ font-size: 20px;
  text-align: right;
- margin-top: 1.5em;
- padding-right: 1em;
+ margin: 0;
+ padding-top: 0;
+ padding-left: 0;
+ padding-bottom: 0;
+ @include breakpoint(small){
+   font-size: 25px;
+   margin-top: 1.5em;
+   padding-left: $ratio--inv#{em};
+   padding-top: $ratio--inv#{em};
+   padding-right: 1em;
+ }
  svg {
    fill: $color__black;
    position: absolute;

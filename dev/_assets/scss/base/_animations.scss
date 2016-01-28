@@ -3,8 +3,8 @@
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .animated {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -62,10 +62,45 @@
   }
 }
 
-@keyframes blinking{
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+
+@-webkit-keyframes blinking {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+    }
+    @-moz-keyframes blinking {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+    }
+    @-o-keyframes blinking {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.blinking {
+  @extend .animated;
+  @extend .animated.infinite;
+  animation-name: blinking;
 }
 
 
@@ -78,7 +113,6 @@
 
 .grow-In{
     @extend .animated;
-    @extend .animated-slow;
     -webkit-animation-name: growIn;
     animation-name: growIn;
 }
