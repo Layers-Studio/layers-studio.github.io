@@ -26,10 +26,12 @@ background: #1beab8;
     100% { box-shadow: none; }
 }
 
-.swing-fifth, .swing-seventh {
-  margin-top: 3em !important;
+//  .swing-seventh {
+//   margin-top: 3em !important;
+// }
+.swing-fourth-odd, .swing-sixth-odd {
+  text-indent: -9999px;
 }
-
 .inner-shadow {
     animation: inner-shadow 1.5s linear;
 }
