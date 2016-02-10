@@ -10,7 +10,7 @@ $.fn.mailchimp = function (options) {
     function mailchimpSuccess(response){
   			if (response.result === 'success') {
   				var  $overlay = $('<div id="overlay"></div>');
-  				var $content = $('<div class="overlay-inner column column__center column__12-of-12 column__12-of-12--small column__8-of-12--medium column__6-of-12--large"><div class="overlay-inner__inner"><h1>thanks.</h1><h2>For signing up, we will email you with more information in due course for now why not follow us on <a href="https://twitter.com" title="Follow is on twitter" title="Folow us on twitter">Twitter</a>.</h2></div></div>');
+  				var $content = $('<div class="overlay-inner column column__center column__12-of-12 column__12-of-12--small column__8-of-12--medium column__6-of-12--large"><div class="overlay-inner__inner"><h1>thanks.</h1><h2>For signing up, we will email you with more information in due course for now why not follow us on <a href="https://twitter.com/LayersStudio" title="Follow is on twitter" title="Folow us on twitter">Twitter</a>.</h2></div></div>');
   				var $close = $('<h2 class="close-lightbox">x</h2>');
   				$('body').addClass('noscroll');
   				$overlay.append($content);

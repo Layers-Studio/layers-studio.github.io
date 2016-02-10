@@ -23,9 +23,7 @@
     &:hover,
     &:focus,
     &.zeroclipboard-is-hover {
-        background: $color__white url(/imgs/Plus.png) no-repeat center;
-        color: $color__white;
-        fill: $color__white;
+        opacity: 0.8;
         outline: none;
     }
 
