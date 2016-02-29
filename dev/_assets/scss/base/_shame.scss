@@ -2,3 +2,12 @@
 .error-message {
 	display: block;
 }
+
+.notification {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	background: $color__blue;
+	padding: $ratio--inv#{em} 0;
+}
