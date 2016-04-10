@@ -23,6 +23,7 @@
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 
+
     &:focus{
         border-color: $color__black;
         outline: none;
@@ -94,6 +95,13 @@ select{
     }
 }
 
+.email--signup {
+  width: 100%;
+  @include breakpoint(small){
+    width: auto;
+  }
+}
+
 // Styles for the Checkboxes and the radios
 
 input[type="checkbox"],
@@ -129,9 +137,11 @@ input[type="submit"]{
     background: $color__blue url(/imgs/plus-medium.png) no-repeat center;
     text-indent: -9999px;
     border: 1px solid $color__black;
-    border-left: 0;
     padding: 0.68em 1.2em;
     color: $color__gray;
+    @include breakpoint(small){
+      border-left: 0;
+    }
 }
 
 // Optional class to add to form to create optional content
@@ -140,4 +150,12 @@ input[type="submit"]{
     label:after{
         content: " (optional)";
     }
+}
+
+.contact--form {
+  input, textarea {
+    margin: $ratio--inv#{em} 0;
+    border: none;
+    padding: $ratio#{em};
+  }
 }

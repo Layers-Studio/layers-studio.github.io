@@ -74,8 +74,12 @@ button {
 
 input[type="submit"] {
     margin: 0;
-    width: auto;
+    width:100%;
     -webkit-appearance: none;
+
+    @include breakpoint(small){
+      width: auto;
+    }
 }
 
 .button--active {
@@ -105,4 +109,8 @@ button {
     font-style: italic;
     font-weight: bold;
     margin: 0 !important;
+}
+
+.contact--form-button {
+  border: none;
 }

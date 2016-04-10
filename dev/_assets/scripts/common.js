@@ -8,3 +8,6 @@ $('body').mailchimp();
 
 require('./components/revealText');
 $('.panel--wrapper').revealText();
+
+require('./components/contactForm');
+$('.contact--form').contactForm();
