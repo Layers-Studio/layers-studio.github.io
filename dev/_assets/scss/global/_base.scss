@@ -17,6 +17,8 @@ body{
     animation-fill-mode:forwards;
     font-weight: $font-weight-light;
     animation-duration: 0.5s;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 .ie9 body,
