@@ -418,40 +418,62 @@ $.fn.revealText = function (options) {
       e.preventDefault();
       $('.swing-third').addClass('flip');
       $('.swing-third .back').fadeOut(1000);
-      $('.swing-fourth').delay(2000).queue(function(){
-            $(this).addClass('flip');
-            $('.swing-fourth .back').fadeOut(1000) .clearQueue();
-        });
     });
 
     $('.fourth-link').on('click', function(e){
       e.preventDefault();
-      $('.swing-fourth-odd').toggleClass('flip');
-      $('.swing-fourth-odd .back').fadeOut(1000);
-      $('.swing-fifth').delay(2000).queue(function(){
-            $(this).addClass('flip');
-            $('.swing-fifth .back').fadeOut(1000) .clearQueue();
-        });
+      $('.swing-fourth').toggleClass('flip');
+      $('.swing-fourth .back').fadeOut(1000);
     });
 
     $('.fifth-link').on('click', function(e){
       e.preventDefault();
-      $('.swing-sixth').addClass('flip');
+      $('.swing-fifth').toggleClass('flip');
+      $('.swing-fifth .back').fadeOut(1000);
+    });
+
+    $('.sixth-link').on('click', function(e){
+      e.preventDefault();
+      $('.swing-sixth').toggleClass('flip');
       $('.swing-sixth .back').fadeOut(1000);
-        $('.swing-sixth-odd').delay(2000).queue(function(){
-            $(this).addClass('flip');
-            $('.front-sixth-odd').addClass('clicked');
-            $('.swing-sixth-odd .back').fadeOut(1000) .clearQueue();
-        });
-          $('.swing-seventh').delay(4000).queue(function(){
-            $(this).addClass('flip');
-            $('.swing-seventh .back').fadeOut(1000) .clearQueue();
-        });
-        $('.swing-eight').delay(6000).queue(function(){
+    });
+
+    $('.seventh-link').on('click', function(e){
+      e.preventDefault();
+      $('.swing-seventh').toggleClass('flip');
+      $('.swing-seventh .back').fadeOut(1000);
+      $('.swing-eight').delay(2000).queue(function(){
           $(this).addClass('flip');
-          $('.swing-eigth .back').fadeOut(1000) .clearQueue();
+          $('.swing-eight .back').fadeOut(1000) .clearQueue();
+      });
+      $('.swing-nine').delay(4000).queue(function(){
+          $(this).addClass('flip');
+          $('.swing-nine .back').fadeOut(1000) .clearQueue();
       });
     });
+    //       $('.swing-seventh').delay(4000).queue(function(){
+    //         $(this).addClass('flip');
+    //         $('.swing-seventh .back').fadeOut(1000) .clearQueue();
+
+
+    // $('.fifth-link').on('click', function(e){
+    //   e.preventDefault();
+    //   $('.swing-sixth').addClass('flip');
+    //   $('.swing-sixth .back').fadeOut(1000);
+    //     $('.swing-sixth-odd').delay(2000).queue(function(){
+    //         $(this).addClass('flip');
+    //         $('.front-sixth-odd').addClass('clicked');
+    //         $('.swing-sixth-odd .back').fadeOut(1000) .clearQueue();
+    //     });
+    //       $('.swing-seventh').delay(4000).queue(function(){
+    //         $(this).addClass('flip');
+    //         $('.swing-seventh .back').fadeOut(1000) .clearQueue();
+    //     });
+    //     $('.swing-eight').delay(6000).queue(function(){
+    //       $(this).addClass('flip');
+    //       $('.swing-eigth .back').fadeOut(1000) .clearQueue();
+    //   });
+    // });
 };
 
 },{}]},{},[4]);
