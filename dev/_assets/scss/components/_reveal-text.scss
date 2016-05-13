@@ -139,6 +139,20 @@ background: #1beab8;
       }
   }
 
+  @media only screen and (min-width: 484px) and (max-width :549px) {
+    .swing-first{
+          height: 30px;
+          .clicked {
+            height: 30px;
+          }
+          .back {
+            top: 50px;
+            height: 30px;
+          }
+      }
+  }
+
+
   @media only screen and (min-width: 749px) and (max-width :774px) {
     .swing-second {
           height: 55px;
@@ -161,6 +175,32 @@ background: #1beab8;
           .back {
             top: 50px;
             height: 50px;
+          }
+      }
+  }
+
+  @media only screen and (min-width: 750px) and (max-width :774px) {
+    .swing-fourth {
+          height: 60px;
+          .clicked {
+            height: 60px;
+          }
+          .back {
+            top: 60px;
+            height: 60px;
+          }
+      }
+  }
+
+  @media only screen and (min-width: 775px) and (max-width :824px) {
+    .swing-fourth {
+          height: 53px;
+          .clicked {
+            height: 53px;
+          }
+          .back {
+            top: 53px;
+            height: 53px;
           }
       }
   }
@@ -284,6 +324,32 @@ background: #1beab8;
 
   @media only screen and (min-width: 423px) and (max-width :551px) {
     .swing-third {
+      height: 30px;
+      .clicked {
+        height: 30px;
+      }
+      .back {
+        top: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 423px) and (max-width :451px) {
+    .swing-third {
+      height: 40px;
+      .clicked {
+        height: 40px;
+      }
+      .back {
+        top: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 396px) and (max-width :589px) {
+    .swing-sixth, .swing-seventh, .swing-eight {
       height: 30px;
       .clicked {
         height: 30px;
