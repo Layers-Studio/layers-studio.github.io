@@ -1,0 +1,169 @@
+.mouse-scroll {
+	color:black;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  letter-spacing: 2px;
+  opacity: 1;
+  text-decoration: none;
+  animation: fadeIn 2s ease-in;
+  animation-fill-mode: forwards;
+}
+.mouse-scroll .mouse-cord {
+  margin: 0 auto;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-top-left-radius: 50px;
+  margin-left: 50%;
+  display: block;
+  animation: all 500ms ease-in-out;
+}
+.mouse-scroll .mouse {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 45px;
+  margin: 0 auto 5px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 23px;
+}
+.mouse-scroll .mouse .mouse-movement {
+  position: absolute;
+  display: block;
+  top: 20%;
+  left: 50%;
+  width: 2px;
+  height: 2px;
+  transform: translateX(-50%);
+  background: #000;
+  border-radius: 4px;
+  animation: scroll-ani 2.5s ease-in-out infinite;
+}
+.mouse-scroll .mouse-message {
+  opacity: 0;
+  text-transform: uppercase;
+  color: black;
+  animation: fadeOut 500ms ease-in-out;
+}
+.mouse-scroll:hover .mouse-message {
+  opacity: 1;
+  animation: fadeIn 500ms ease-in-out;
+}
+@-webkit-keyframes scroll-ani {
+  0% {
+    top: 29%;
+    opacity: 0;
+    height: 2px;
+  }
+  20% {
+    top: 29%;
+    opacity: 1;
+  }
+  60% {
+    top: 50%;
+    height: 6px;
+  }
+  80% {
+    top: 50%;
+    opacity: 0;
+    height: 6px;
+  }
+  100% {
+    top: 29%;
+    opacity: 0;
+    height: 2px;
+  }
+}
+@-moz-keyframes scroll-ani {
+  0% {
+    top: 29%;
+    opacity: 0;
+    height: 2px;
+  }
+  20% {
+    top: 29%;
+    opacity: 1;
+  }
+  60% {
+    top: 50%;
+    height: 6px;
+  }
+  80% {
+    top: 50%;
+    opacity: 0;
+    height: 6px;
+  }
+  100% {
+    top: 29%;
+    opacity: 0;
+    height: 2px;
+  }
+}
+@keyframes scroll-ani {
+  0% {
+    top: 25%;
+    opacity: 0;
+    height: 2px;
+  }
+  20% {
+    top: 25%;
+    opacity: 1;
+  }
+  60% {
+    top: 40%;
+    height: 6px;
+  }
+  80% {
+    top: 40%;
+    opacity: 0;
+    height: 6px;
+  }
+  100% {
+    top: 25%;
+    opacity: 0;
+    height: 2px;
+  }
+}
+@keyframes scroll-ani-reverse {
+  0% {
+    top: 60%;
+    opacity: 0;
+    height: 2px;
+  }
+  20% {
+    top: 60%;
+    opacity: 1;
+  }
+  60% {
+    top: 25%;
+    height: 6px;
+  }
+  80% {
+    top: 25%;
+    opacity: 0;
+    height: 6px;
+  }
+  100% {
+    top: 60%;
+    opacity: 0;
+    height: 2px;
+  }
+}
+@media (max-width: 700px) {
+  .mouse-scroll .mouse {
+    border-radius: 4px;
+  }
+  .mouse-scroll .mouse .mouse-movement {
+    animation: scroll-ani-reverse 2.5s ease-in-out infinite;
+  }
+  .mouse-scroll .mouse-cord {
+    display: none;
+  }
+}
