@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+	/****Ipad Landscape 1024 Container 970 ****/
+	.header h1{ font-size:42px;width:90%}
+	.header{ padding:31% 0 10px 0}
+	.service-list{ margin-bottom:30px;}
+	.c-logo-part ul li{ margin:0 15px;}
+	.form{ margin:0 0 0 20px}
+	.link{ padding:15px 25px;}
+	.feed-col h2{ font-size:28px;}
+	.contact-links-row .contact-links-row-col1, .contact-links-row .contact-links-row-col2{ padding:30px 40px}
+	.contact-row .contact-row-col1{ width:115px; }
+	.contact-row .contact-row-col1 svg{ margin:60px 20px 60px 40px;}
+	.ftse-row{ padding:56px 50px;}
+	
+}	
+   
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/****Ipad Portrait 768 Container 750 ****/
+	body{ font-size:13px;}
+	p{ line-height:20px ;}
+	.header h1{ font-size:32px;width:92%}
+	.header{ padding:31% 0 10px 0}
+	#intro.main-section h2 { width:75%;}
+	h2{ font-size:30px}
+	h6{ font-size:16px;}
+	h3{ font-size:15px;}
+	#finances.main-section .container p{ width:95%;}
+	.form{ margin:0;}
+	.contact-info-box{ margin:0 ;}
+	.social-link{ margin:0;}
+	.link{ padding:15px 25px;}
+	.contact-links-row .contact-links-row-col1, .contact-links-row .contact-links-row-col2{ padding:25px 20px}
+	.contact-row .contact-row-col1{ width:60px; }
+	.contact-row .contact-row-col1 svg{ margin:60px 10px 60px 10px;}
+	.ftse-row{ padding:56px 30px;}
+	.ftse-row h4 { font:400 34px/34px 'Roboto'}
+	.ftse-row h4 span { font:400 22px/14px 'Roboto'}
+	.feed-col h2{ font-size:22px;}
+	#finance-services.main-section{ padding: 80px 0 100px;}
+}
+
+@media only screen and (max-width: 767px) {
+	/****Mobile Landscape 480 Container 100% ****/
+	body{ font-size:12px;}
+	h2{ font-size:26px;}
+	h3{ font-size:14px;}
+	h6{ font-size:16px; margin-bottom:40px;}
+	p{ line-height:18px;}
+	.service-list{ font-size:12px; margin-bottom:20px;}
+	.we-create li{ font-size:13px; padding:0 0 0 8px}
+	.header h1{ font-size:28px;width:92%}
+	.header{ background:url('/img/bg-header.jpg') no-repeat center top fixed; 
+  -webkit-background-size: auto 100%;
+  -moz-background-size: 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 40%;padding:43% 0 10px 0}
+	.main-section{ padding:60px 0 70px;}
+	#intro.main-section h2 { width:75%;font:400 14px/18px 'Roboto'}
+	.form{ margin:0 30px;}
+	.copyright{ font-size:12px;}
+	.business-talking a{ padding:10px 25px; font-size:14px;}
+	.main-section.contact{ padding:60px 0 70px}
+	.client-part-haead{ font-size:20px; line-height:30px;}
+	.link{ font-size:14px; padding:10px 25px;}
+	.logo{ width:100px;}
+	.main-section.contact{ background-size:contain;}
+	.Portfolio-nav li a{ padding:5px 16px;}
+	.Portfolio-nav li{ display:block;}
+	.link{ padding:15px 25px;}
+	.contact-links-row .contact-links-row-col1, .contact-links-row .contact-links-row-col2{ padding:25px 20px}
+	.contact-row .contact-row-col1{ width:160px; }
+	.contact-row .contact-row-col1 svg{ margin:60px 20px 60px 80px;}
+	.ftse-row{ padding:56px 100px;}
+	.ftse-row h4 { font:400 34px/34px 'Roboto'}
+	.ftse-row h4 span { font:400 22px/14px 'Roboto'}
+	.feed-col h2{ font-size:22px;}
+	#finance-services.main-section{ padding: 40px 0 60px;}
+	#finance-services.main-section .container h2, #finances.main-section .container h2{ font:400 28px/38px 'Georgia'}
+	.main-section#block{ margin-bottom:0; margin-top:0;}
+	.main-section#strapline{ padding:30px 0 30px 0}
+	#finances.main-section .container p{ font:400 14px/18px 'Roboto'}
+	#finances.main-section .container{width:80%;}
+	#finances.main-section .row div.fadeInLeft{padding-right:0!important;margin-bottom:30px!important;}
+	#finances.main-section .row div.fadeInRight{padding-left:0!important;}
+	#finances.main-section .container h2{ margin-bottom:10px}
+	.header .link { top:40px;}
+	.footer .logo svg{ width:15.5em; }
+}
+
+@media only screen and (max-width: 479px) {
+	/****Mobile Portrait 320 ****/
+	.logo svg{ width:15.5em; }
+	.contact-info-box{ margin-left:0px;}
+	.header h1{ font:400 20px/22px 'Georgia';width:95%;margin:0 auto 20px auto;padding:20px 10px;}
+	.header{ background:url('/img/bg-header-small.jpg') center top no-repeat;padding:60% 0 10px 0;background-repeat:no-repeat;
+	background-size:contain;}
+	.header .logo svg{width:10em;}
+	.social-link{ margin-left:0px;}
+	.form{ margin:0}
+	.contact-row .contact-row-col1{ width:160px; }
+	.contact-row .contact-row-col1 svg{ margin:60px 20px 60px 80px;}
+	.footer .logo svg{ width:12em; }
+	.footer h2, .footer h2 a{ font:700 18px/22px 'Roboto'}
+	.main-section#strapline h2{ font:400 16px/16px 'Roboto'}
+	#finance-services.main-section .container h2, #finances.main-section .container h2{ font:400 20px/22px 'Georgia'}
+	.ftse-row{ padding:56px 60px;}
+	.ftse-row h4 { font:400 24px/24px 'Roboto'}
+	.ftse-row h4 span { font:400 14px/14px 'Roboto'}
+	.contact-row .contact-row-col1{ width:100px; }
+	.contact-row .contact-row-col1 svg{ margin:60px 20px 60px 30px;}
+	.header .link { right:15px;}
+}

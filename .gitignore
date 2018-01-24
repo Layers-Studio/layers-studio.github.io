@@ -1,0 +1,9 @@
+/.htaccess
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
+.DS_STORE
+.vagrant
+config_custom.yml
+npm-debug.log
